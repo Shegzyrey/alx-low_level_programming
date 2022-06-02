@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *main:is programs first initialization point
+ *main- Is programs first initialization point
  *
- *Return:default returns zero if no erros otherwise returns non-zero value.
+ *Return: Default returns zero if no erros otherwise returns non-zero value.
  */
 int main(void)
 {
