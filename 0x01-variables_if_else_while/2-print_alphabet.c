@@ -3,14 +3,14 @@
 /**
  *main-entry point for the program.
  *
- *Return: returns nothing if zero else error.
+ *Return: return the list of lowercase alphabet.
  */
-int main()
+int main(void)
 {
 	char ch;
 	for (ch= 'a'; ch<= 'z'; ch++){
 		putchar(ch);
-		putchar ('\n' );
-		return (0);
 	}
+	putchar('\n');
+	return (0);
 }
