@@ -5,7 +5,7 @@
  *
  *Return: returns nothing if zero else error.
  */
-int main(void)
+int main()
 {
 	char ch;
 	for (ch= 'a'; ch<= 'z'; ch++){
