@@ -5,11 +5,12 @@
  *
  *Return: returns nothing if zero else error.
  */
-void main()
+int main(void)
 {
-	int ch;
-	for (ch= 'a'; ch<= 'z'; ch++)
+	char ch;
+	for (ch= 'a'; ch<= 'z'; ch++){
 		putchar(ch);
 		putchar ('\n' );
-		getch();
+		return (0);
+	}
 }
