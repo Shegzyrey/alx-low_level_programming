@@ -3,14 +3,13 @@
 #include <stdio.h>
 
 /**
+ *main-entry point for the program.
  *
- *  *main-entry point for the program.
  *
- *   *
+ *Return: return the list of lowercase alphabet with missing letters.
  *
- *    *Return: return the list of lowercase alphabet.
  *
- *     */
+ */
 
 int main(void)
 {
