@@ -17,7 +17,6 @@ int main(void)
 		putchar(hexvalues[b]);
 	}
 
-	putchar('\n');
 
 	return (0);
 }
