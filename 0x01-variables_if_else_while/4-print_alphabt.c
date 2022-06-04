@@ -13,24 +13,17 @@
  *     */
 
 int main(void)
-
 {
+	char eq;
 
-		char ch;
+	for (eq = 'a'; eq <= 'z'; eq++)
+	{
+		if (eq != 'e' && eq != 'q')
 
+			putchar(eq);
+	}
 
+	putchar('\n');
 
-			for (ch = 'a'; ch <= 'z'; ch++)
-				if (ch != 'e' && ch != 'q')
-
-
-
-						putchar(ch);
-
-				putchar('\n');
-
-
-
-					return (0);
-
+	return (0);
 }
