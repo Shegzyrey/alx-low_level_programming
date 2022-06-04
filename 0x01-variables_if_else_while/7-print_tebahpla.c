@@ -9,10 +9,10 @@ int main(void)
 {
 	int letter;
 
-	for(letter = 'z'; letter >= 'a'; letter--)
+	for (letter = 'z'; letter >= 'a'; letter--)
 	{
 		printf("%c", letter);
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }
