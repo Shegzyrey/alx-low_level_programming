@@ -14,7 +14,7 @@ int main(void)
 
 	for (b = 0; b < 16; b++) 
 	{
-		putchar(hexvalues[i]);
+		putchar(hexvalues[b]);
 	}
 
 	putchar('\n');
