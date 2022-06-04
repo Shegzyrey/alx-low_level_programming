@@ -12,11 +12,12 @@ int main(void)
 
 	char hexvalues[] = "0123456789abcdef";
 
-	for (b = 0; b <= 16; b++)
+	for (b = 0; b < 16; b++)
 	{
 		putchar(hexvalues[b]);
 	}
 
 
+	putchar('\n');
 	return (0);
 }
