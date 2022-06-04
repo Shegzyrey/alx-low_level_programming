@@ -9,7 +9,7 @@ int main(void)
 {
 	int letter;
 
-	for(letter = 'z'; letter >= 'a'; i--)
+	for(letter = 'z'; letter >= 'a'; letter--)
 	{
 		printf("%c", letter);
 	}
