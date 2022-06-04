@@ -10,11 +10,11 @@
  */
 int main(void)
 {
-	int n = 0;
+	int number = 0;
 
-	for ( n <= 0; n <= 9; n++)
+	for ( number >= 0; number <= 9; n++)
 	{
-		printf("%d", n)
+		printf("%d", number);
 	}
 	printf('\n');
 
