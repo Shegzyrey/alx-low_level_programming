@@ -13,5 +13,6 @@ int main(void)
 	{
 		printf("%c", letter);
 	}
+	printf("\n");
 	return 0;
 }
