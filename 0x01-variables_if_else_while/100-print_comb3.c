@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+ *
  *main-entry point for the program.
  *
  *
@@ -24,7 +25,11 @@ int main(void)
 			{
 				continue;
 			}
-			if (number0 != '9' || number1 == '9')
+			if (number0 == '8' && number1 == '9')
+			{
+				break;
+			}
+			else
 			{
 				putchar(',');
 				putchar(' ');
