@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 -prints alphabet 10 times
+ * _islower - use ascii to print lower case
  *
- * Return: void
+ * Return: value
  */
 
 int _islower(int c)
