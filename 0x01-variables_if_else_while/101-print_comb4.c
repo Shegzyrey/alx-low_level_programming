@@ -22,15 +22,15 @@ int main(void)
 					putchar(number0);
 					putchar(number1);
 					putchar(number2);
-				}
-				if (number0 == '7' && number1 == '8' && number2 == '9')
-				{
-					break;
-				}	
-				else
-				{
-					putchar(',');
-					putchar(' ');
+					if (number0 == '7' && number1 == '8' && number2 == '9')
+					{
+						break;
+					}	
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}	
 		}
