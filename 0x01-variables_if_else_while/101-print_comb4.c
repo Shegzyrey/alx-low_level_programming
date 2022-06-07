@@ -15,7 +15,7 @@ int main(void)
 	{
 		for (number1 = '0'; number1 <= '9'; number1++)
 		{
-			for (number2 = '0'; number2 <= '9', number2++)
+			for (number2 = '0'; number2 <= '9'; number2++)
 			{
 				if (number0 < number1 && number1 < number2)
 				{
