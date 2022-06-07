@@ -25,14 +25,14 @@ int main(void)
 					if (number0 == '7' && number1 == '8' && number2 == '9')
 					{
 						break;
-					}	
+					}
 					else
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
-			}	
+			}
 		}
 	}
 	putchar('\n');
