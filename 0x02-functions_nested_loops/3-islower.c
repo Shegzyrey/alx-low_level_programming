@@ -2,7 +2,7 @@
 
 /**
  * _islower - use ascii to print lower case
- *
+ *@c : character for checking case
  * Return: value
  */
 
