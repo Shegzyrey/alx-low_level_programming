@@ -23,7 +23,7 @@ int main(void)
 					putchar(number1);
 					putchar(number2);
 				}
-				if (number0 = '7' && number1 == '8' && number2 == '9')
+				if (number0 == '7' && number1 == '8' && number2 == '9')
 				{
 					break;
 				}	
