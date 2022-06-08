@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	long int fi1 = 0, fi2 = 1, fisum;
-	long int sum = 0;
+	int fi1 = 0, fi2 = 1, fisum;
+	int sum = 0;
 
 	while (fisum < 4000000)
 	{
@@ -19,7 +19,7 @@ int main(void)
 		if ((fisum % 2) == 0)
 			sum += fisum;
 	}
-	printf("%li\n", sum);
+	printf("%i\n", sum);
 
 	return (0);
 }
