@@ -14,7 +14,7 @@ void print_times_table(int n)
 	int r = 0, c, product;
 
 	if (n < 0 || n > 15)
-		return (0);
+		return ();
 
 	while (r <= n)
 	{
