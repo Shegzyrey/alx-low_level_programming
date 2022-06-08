@@ -4,10 +4,16 @@
  *add - returns sum
  *@n :number one
  *@m: number two
- * Return: 0
+ *
+ * Description: supply 2 numbers and return sum
+ * Return: sum
  */
 
-int add(int n, int  m)
+int add(int n, int m)
 {
-	return (int n + int m);
+	int sum;
+
+	sum = n + m;
+
+	return (sum);
 }
