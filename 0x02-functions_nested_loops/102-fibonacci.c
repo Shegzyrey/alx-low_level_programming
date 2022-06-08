@@ -15,7 +15,7 @@ int main(void)
 		sum = fi1 + fi2;
 		fi1 = fi2;
 		fi2 = sum;
-		print("%lu", sum);
+		printf("%lu", sum);
 
 		if (fib_count == 49)
 		{
