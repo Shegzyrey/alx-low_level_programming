@@ -1,20 +1,17 @@
 #include "main.h"
+#include<unistd.h>
 
 /**
  * main - program entry
  *
- * Return: 0 if succes
+ * Return: 0 on success
  */
+
 int main(void)
 {
-	_putchar = '_';
-	char i[] = "putchar";
-	int j;
+	write(1, "_putchar", 8);
 
-	for (j = 0; j < 8; j++)
-	{
-		_putchar(i[j]);
-	}
 	_putchar('\n');
+
 	return (0);
 }
