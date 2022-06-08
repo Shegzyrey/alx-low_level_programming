@@ -4,14 +4,14 @@
  * print_times_table - prints product values
  *
  * @n: number used in multiplication
- *Descriptio: return table without 15 amd below
+ *Description: return table without fifteen  amd below
  * Return: void
  */
 
 void print_times_table(int n)
 {
 
-	int r = 0, c, product;
+	int r, c, product;
 
 	if (n < 0 || n > 15)
 		return;
