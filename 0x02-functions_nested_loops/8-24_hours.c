@@ -8,10 +8,16 @@
 
 void jack_bauer(void)
 {
-	int h1, h2, m1, m2;
+	int h1, h2, m1, m2, hmax;
+
+	hmax = 58;
 	h1 = 0;
 	while (h1 <= 2)
 	{
+		if (h1 == '2')
+		{
+			hmax = '4';
+		}
 		h2 = 0;
 		while (h2 <= 4)
 		{
