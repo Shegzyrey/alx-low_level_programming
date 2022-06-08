@@ -10,22 +10,22 @@ void jack_bauer(void)
 {
 	int h1, h2, m1, m2, hmax;
 
-	hmax = 58;
-	h1 = 0;
-	while (h1 <= 2)
+	hmax = 9;
+	h1 = '0';
+	while (h1 <= '2')
 	{
 		if (h1 == '2')
 		{
-			hmax = '4';
+			hmax = '3';
 		}
-		h2 = 0;
+		h2 = '0';
 		while (h2 <= hmax)
 		{
-			m1 = 0;
-			while (m1 <= 5)
+			m1 = '0';
+			while (m1 <= '5')
 			{
-				m2 = 0;
-				while (m2 <= 9)
+				m2 = '0';
+				while (m2 <= '9')
 				{
 					_putchar(h1);
 					_putchar(h2);
@@ -35,12 +35,11 @@ void jack_bauer(void)
 					_putchar('\n');
 					m2++;
 				}
-				m2++;
+				m1++;
 			}
-			m1++;
+			h2++;
 		}
-		h2++;
+		h1++;
 	}
-	h1++;
 
 }
