@@ -8,14 +8,17 @@
 
 void jack_bauer(void)
 {
-	int h1 = 0, h2 = 0, m1 = 0, m2 = 0;
-
+	int h1, h2, m1, m2;
+	h1 = 0;
 	while (h1 <= 2)
 	{
+		h2 = 0;
 		while (h2 <= 4)
 		{
+			m1 = 0;
 			while (m1 <= 5)
 			{
+				m2 = 0;
 				while (m2 <= 9)
 				{
 					_putchar(h1);
