@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main- function entry point
  * Description: getting the 3,5 multiples of 1024
