@@ -19,7 +19,7 @@ void jack_bauer(void)
 			hmax = '4';
 		}
 		h2 = 0;
-		while (h2 <= 4)
+		while (h2 <= hmax)
 		{
 			m1 = 0;
 			while (m1 <= 5)
