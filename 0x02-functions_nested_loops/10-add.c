@@ -2,12 +2,12 @@
 
 /**
  *add - returns sum
- *@n :number 1
- *@m: number 2
+ *@n :number one
+ *@m: number two
  * Return: 0
  */
 
 int add(int n, int  m)
 {
-	return (n + m);
+	return (int n + int m);
 }
