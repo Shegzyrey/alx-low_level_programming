@@ -10,6 +10,7 @@
 
 void print_times_table(int n)
 {
+
 	int r = 0, product, c;
 
 	if (n < 0 || n > 15)
@@ -22,6 +23,7 @@ void print_times_table(int n)
 			product = r * c;
 			if (c == 0)
 				_putchar('0' + product);
+
 			else if (product < 10)
 			{
 				_putchar(' ');
