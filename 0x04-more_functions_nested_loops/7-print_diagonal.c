@@ -15,8 +15,10 @@ void print_diagonal(int n)
 	{
 		while (slas < n)
 		{
-			while(spac < slas)
+
+			while (spac < slas)
 			{
+
 				_putchar(' ');
 				spac++;
 			}
