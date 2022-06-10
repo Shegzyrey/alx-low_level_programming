@@ -5,13 +5,10 @@
  * mul - multiplication function
  * @a: first numebr
  * @b: second number
- * * Return: 0
+ * * Return: product
  */
 
 int mul(int a, int b)
 {
-
-	'a' * 'b';
-
-	return (0);
+	return (a * b);
 }
