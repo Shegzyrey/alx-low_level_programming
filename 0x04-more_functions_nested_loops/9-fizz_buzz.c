@@ -15,16 +15,16 @@ int main(void)
 		if (i == 100)
 		{
 			printf("buzz");
-			printf("\n")
+			printf("\n");
 		}
 		else if (i % 15 == 3)
 		{
 			printf("buzz");
-			pritnf(" ");
+			printf(" ");
 		}
 		else if (i % 15 == 5)
 		{
-			printf(buzz);
+			printf("buzz");
 			printf(" ");
 		}
 		else
