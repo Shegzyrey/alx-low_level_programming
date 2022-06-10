@@ -8,13 +8,13 @@
 
 void print_numbers(void)
 {
-	for (i = 0, i >= 0 && i < 9, i++)
+	int i;
+	for (i = '0', i >= '0' && i < '9', i++)
 	{
 		_putchar(i);
 
-		_putchar('\n');
 	}
 
-	return (0);
+	_putchar('\n');
 
 }
