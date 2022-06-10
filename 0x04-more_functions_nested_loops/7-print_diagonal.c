@@ -11,11 +11,7 @@ void print_diagonal(int n)
 	int slas = 0;
 	int spac = 0;
 
-	if (n <= 0)
-	{
-		_putchar('\n')
-	}
-	else
+	if (n > 0)
 	{
 		while (slas < n)
 		{
@@ -30,4 +26,6 @@ void print_diagonal(int n)
 			_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
