@@ -13,25 +13,21 @@ int main(void)
 
 	long int div = 2, ans = 0, maxFact;
 
-	while (n != 0)
+	while (n != 1)
 	{
-		if (n % div != 0)
-			div = div + 1;
-		else
+		if (n % div == 0)
 		{
-			maxFact = n;
-
-			n = n / div;
-
-			if (n == 1)
+			while (n % div == 0)
 			{
-				printf("%d is the largest prime factor !", maxFact);
-				ans = 1;
-				break;
+				printf("%ld", div);
+
+				n /= div;
 			}
+			ans = div;
 		}
+		div++;
 	}
-	printf("\n");
+	printf("The largest prime factor is : %ld\n", ans);
 	return (0);
 }
 
