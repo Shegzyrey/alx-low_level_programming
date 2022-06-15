@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - prints every 2 characters of a string 
+ * puts2 - prints every 2 characters of a string
  *
  * @str: the string to that wil be printed
  *
@@ -10,15 +10,16 @@
 
 void puts2(char *str)
 {
-	char s[] = "";
+	int i = 0;
 
-	for(int i = 0; i < strlen(str); i+=2)
+	while (str[i] != '\0')
 	{
-		_putchar(str[i]);
-		s[i/2] = str[i];
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+
+		i++;
 	}
 	_putchar('\n');
-
-	return 0;
-
-}	
+}
