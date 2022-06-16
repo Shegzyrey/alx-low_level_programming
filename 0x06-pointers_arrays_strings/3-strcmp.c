@@ -5,11 +5,10 @@
  *
  * @s1:string 1
  * @s2: string 2
- * 
  * Return: Always 0
  */
 
-char *_strncpy(char *s1, char *s2)
+char *_strcmp(char *s1, char *s2)
 {
 	int i = 0;
 
@@ -22,5 +21,4 @@ char *_strncpy(char *s1, char *s2)
 		i++;
 	}
 	return (0);
-
 }
