@@ -1,28 +1,24 @@
 #include "main.h"
 
 /**
- * _strcat -  function appends the src string to the dest string.
+ * string_toupper -  function change to upper case
  *
- * @dest:string to be appended to.
- * @src: string to be appended.
- * Return: always 0.
+ * @s: char type pointer
+ * Return: value
  */
 
-char *_strcat(char *dest, char *src)
+char *string_toupper(char *s)
 {
 	int i;
-	int j;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	i = 0;
 
-	for (j = 0; src[j] != '\0'; j++)
+	while (s[i] != '\0')
 	{
-		dest[i] = src[j];
+		if (s[i] >= 97 && str[i] <= 122)
+			s[i] = s[i] - 32;
+
 		i++;
 	}
-	dest[i] = '\0';
-
-	_putchar(dest);
-
-	_putchar('\n');
+	return (s);
 }
