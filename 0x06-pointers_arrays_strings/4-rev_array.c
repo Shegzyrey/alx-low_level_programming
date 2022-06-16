@@ -5,20 +5,23 @@
  *
  * @a:string to be appended to.
  * @n: number of elements of array.
- * Return: always 0.
+ * Return: value.
  */
 
 void reverse_array(int *a, int n)
 {
-	int i, temp[n];
+	int i, temp;
 
-	for (int i = 0; i < n; i++)
+	i = 0;
+
+	n--;
+
+	while (i < n)
 	{
-		temp[i] = a[n - i - 1];
+		temp = a[i];
+		a[i] = a[n];
+		a[n] = temp;
+		i++;
+		n--;
 	}
-	for (i = 0; i < n; i++)
-	{
-		a[i] = temp[i];
-	}
-	return (0);
 }
