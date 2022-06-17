@@ -1,28 +1,23 @@
 #include "main.h"
 
 /**
- * _strcat -  function appends the src string to the dest string.
+ * print_number - function to print number
  *
- * @dest:string to be appended to.
- * @src: string to be appended.
- * Return: always 0.
+ * @n: int type
+ * Return: value
  */
 
-char *_strcat(char *dest, char *src)
+void print_number(int n)
 {
-	int i;
-	int j;
-
-	for (i = 0; dest[i] != '\0'; i++)
-
-	for (j = 0; src[j] != '\0'; j++)
+	if (n < 0)
 	{
-		dest[i] = src[j];
-		i++;
+		n = -n;
+		_putchar('-');
 	}
-	dest[i] = '\0';
-
-	_putchar(dest);
-
-	_putchar('\n');
+	if (n / 10)
+	{
+		print_number(n / 10);
+	}
+	_putchar(n % 10 + '0');
 }
+
