@@ -7,7 +7,7 @@
  * Return: value
  */
 
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i;
 	int j;
