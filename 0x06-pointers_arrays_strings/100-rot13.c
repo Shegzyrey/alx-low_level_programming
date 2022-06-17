@@ -1,28 +1,35 @@
 #include "main.h"
 
 /**
- * _strcat -  function appends the src string to the dest string.
+ * rot13 -  function that encodes.
  *
- * @dest:string to be appended to.
- * @src: string to be appended.
- * Return: always 0.
+ * @s: string to encode.
+ * Return: encoded string
  */
 
-char *_strcat(char *dest, char *src)
+char *rot13(char *s)
 {
 	int i;
 	int j;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	char in[] = "ABCDEFIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLopqrstuvwxyzabcdefghijklm";
 
-	for (j = 0; src[j] != '\0'; j++)
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		dest[i] = src[j];
+		j = 0;
+		while (in[j] != '\0')
+		{
+			if (s[i] == in[j])
+			{
+				s[i] = out[j];
+				break;
+			}
+			j++;
+		}
 		i++;
 	}
-	dest[i] = '\0';
-
-	_putchar(dest);
-
-	_putchar('\n');
+	return (s);
 }
