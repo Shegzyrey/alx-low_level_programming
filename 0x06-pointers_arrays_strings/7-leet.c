@@ -1,28 +1,30 @@
 #include "main.h"
 
 /**
- * _strcat -  function appends the src string to the dest string.
+ * leet  -  function to encode.
  *
- * @dest:string to be appended to.
- * @src: string to be appended.
- * Return: always 0.
+ * @s: char array.
+ * Return: transformed array
  */
 
-char *_strcat(char *dest, char *src)
+char *leet(char *s)
 {
 	int i;
 	int j;
+	char s1[] = "aeotl";
+	char s2[] = "AEOTL";
+	char s3[] = "43071";
 
-	for (i = 0; dest[i] != '\0'; i++)
-
-	for (j = 0; src[j] != '\0'; j++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		dest[i] = src[j];
-		i++;
+		for (j = 0; j < 5; j++)
+		{
+			if (s[i] == s1[j] || s[i] == s2[j])
+			{
+				s[i] = s3[j];
+				break;
+			}
+		}
 	}
-	dest[i] = '\0';
-
-	_putchar(dest);
-
-	_putchar('\n');
+	return (s);
 }
