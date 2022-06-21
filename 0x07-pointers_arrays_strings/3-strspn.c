@@ -27,5 +27,5 @@ unsigned int _strspn(char *s, char *accept)
 		if (res == 1)
 			break;
 	}
-	return (i)
+	return (i);
 }
