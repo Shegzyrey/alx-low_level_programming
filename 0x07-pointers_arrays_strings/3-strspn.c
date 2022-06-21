@@ -8,7 +8,7 @@
  * Return: the characters left.
  */
 
-unsigned int _strspn(char *s, char accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, res;
 
