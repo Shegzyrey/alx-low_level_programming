@@ -28,14 +28,12 @@ int _strlen_recursion(char *s)
 
 int check_palindrome(char str[], int lef, int rig)
 {
-	if (lef == rig)
+	if (lef >= rig)
 		return (1);
 	else if (str[lef] != str[rig])
 		return (0);
-	else if (lef < rig + 1)
-		return (check_palindrome(str, lef + 1, rig - 1));
 	else
-		return (1);
+		return (check_palindrome(str, lef + 1, rig - 1));
 }
 /**
  * is_palindrome - recursively checks for palindrome
