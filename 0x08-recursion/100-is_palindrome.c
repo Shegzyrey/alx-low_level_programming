@@ -9,9 +9,7 @@
 
 int _strlen_recursion(char *s)
 {
-	int i = 0;
-
-	if (s[i] == '\0')
+	if (*s  == '\0')
 	{
 		return (0);
 	}
@@ -26,14 +24,14 @@ int _strlen_recursion(char *s)
  * Return: 1 if true, 0 if false
  */
 
-int check_palindrome(char str[], int lef, int rig)
+int check_palindrome(char *str, int lef, int rig)
 {
 	if (lef >= rig)
 		return (1);
 	else if (str[lef] != str[rig])
 		return (0);
 	else
-		return (check_palindrome(str, lef + 1, rig - 1));
+		return (check_palindrome(lef + 1, rig - 1, str));
 }
 /**
  * is_palindrome - recursively checks for palindrome
@@ -47,5 +45,5 @@ int is_palindrome(char *s)
 	int j;
 
 	j = _strlen_recursion(s) - 1;
-	return (check_palindrome(0, j, s[j]));
+	return (check_palindrome(0, j, s));
 }
