@@ -19,21 +19,21 @@ int _strlen_recursion(char *s)
 }
 /**
  * check_palindrome - is string palindrome
- * @li: start index
- * @ri: end index
+ * @lef: start index
+ * @rig: end index
  * @str: string to check
  *
  * Return: 1 if true, 0 if false
  */
 
-int check_palindrome(char str[], int li, int ri)
+int check_palindrome(char str[], int lef, int rig)
 {
-	if (li == ri)
+	if (lef == rig)
 		return (1);
-	else if (str[li] != str[ri])
+	else if (str[lef] != str[rig])
 		return (0);
-	else if (li < ri + 1)
-		return (check_palindrome(str, li + 1, ri - 1));
+	else if (lef < rig + 1)
+		return (check_palindrome(str, lef + 1, rig - 1));
 	else
 		return (1);
 }
@@ -46,8 +46,8 @@ int check_palindrome(char str[], int li, int ri)
 
 int is_palindrome(char *s)
 {
-	int i;
+	int j;
 
-	i = _strlen_recursion(s) - 1;
-	return (check_palindrome(0, i, s));
+	j = _strlen_recursion(s) - 1;
+	return (check_palindrome(0, j, s));
 }
