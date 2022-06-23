@@ -31,7 +31,7 @@ int check_palindrome(char *str, int lef, int rig)
 	else if (str[lef] != str[rig])
 		return (0);
 	else
-		return (check_palindrome(lef + 1, rig - 1, str));
+		return (check_palindrome((lef + 1), (rig - 1), str));
 }
 /**
  * is_palindrome - recursively checks for palindrome
