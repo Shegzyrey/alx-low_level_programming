@@ -8,12 +8,12 @@
  */
 int root_checker(int n, int i)
 {
-        if (n == (i * i))
-                return (i);
-        else if ((i * i) < n)
-                return (root_checker(n, i + 1));
-        else
-                return (-1);
+	if (n == (i * i))
+		return (i);
+	else if ((i * i) < n)
+		return (root_checker(n, i + 1));
+	else
+		return (-1);
 }
 
 /**
