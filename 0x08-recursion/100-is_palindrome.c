@@ -23,7 +23,7 @@ int _strlen_recursion(char *st)
  * Return: 1 if true, 0 if false
  */
 
-int check_palindrome(char *str, int lef, int rig)
+int check_palindrome(int lef, int rig, char *str)
 {
 	if (lef >= rig)
 		return (1);
