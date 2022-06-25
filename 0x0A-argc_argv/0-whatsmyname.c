@@ -2,20 +2,15 @@
 #include "main.h"
 
 /**
- * main - blank
+ * main - print program name
  * @argc: number of entry
  * @argv: array containing all entered variables
  *
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%d", argv[0]);
-		return (0);
-	}
+	printf("%s\n", argv[0]);
+	return (0);
 }

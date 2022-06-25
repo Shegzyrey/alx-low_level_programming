@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "main.h"
+#include <ctype.h>
+#include <stdlib.h>
 
 /**
  * main - blank
@@ -12,20 +14,20 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int mul;
+	int add;
+	int sum;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (argc > 1)
 		{
-			sum = atoi(argv[i]) + atoi(argv[i + 1]);
+			sum += atoi(argv[i]);
 
-			printf("%d\n", mul);
+			printf("%d\n", add);
 		}
 		else if (argc == 1)
 		{
-			_putchar(0);
-			_putchar('\n');
+			printf("0\n");
 		}
 		else
 		{
