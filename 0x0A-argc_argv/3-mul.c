@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * main - blank
  * @argc: number of entry
@@ -14,19 +14,16 @@ int main(int argc, char *argv[])
 	int i;
 	int mul;
 
-	for (i = 0; i < argc; i++)
+	if (argc > 1 && argc <= 2)
 	{
-		if (argc > 0 && argc <= 2)
-		{
-			mul = atoi(argv[i]) * atoi(argv[i + 1]);
+		mul = atoi(argv[1]) * atoi(argv[2]);
 
-			printf("%d\n", mul);
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		return (0);
+		printf("%d\n", mul);
 	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+	return (0);
 }
