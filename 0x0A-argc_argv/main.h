@@ -1,8 +1,8 @@
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 
-_putchar(char c);
-__attribute__((unused));
-__attribute__((void));
+int _putchar(char c);
+int isNumber(char number[]);
+int main(int argc, char *argv[]);
 
 #endif
