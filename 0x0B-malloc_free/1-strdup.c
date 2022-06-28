@@ -20,15 +20,14 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
 	for (i = 0; i < n; i++)
 	{
 		if (n > 0)
 		{
-			cstr[i] == str[i];
+			cstr[i] = str[i];
 		}
 		else
 			return (NULL);
-
-		return (cstr);
-
+	}
+	return (cstr);
+}
