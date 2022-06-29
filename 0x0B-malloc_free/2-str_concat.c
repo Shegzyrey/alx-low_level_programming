@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * str_concat - add contents of two strings into one
  * @s1: first string
@@ -25,9 +25,9 @@ char *str_concat(char *s1, char *s2)
 	if (cat == NULL)
 		return (NULL);
 	for (l = 0; l < i; l++)
-		s[l] = s1[l];
+		cat[l] = s1[l];
 	for (l = 0; l < j; j++)
-		s[l + i] = s2[l];
+		cat[l + i] = s2[l];
 	s[i + j] = '\0';
 	return (s);
 }
