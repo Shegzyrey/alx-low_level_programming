@@ -34,10 +34,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (cat == NULL)
 		return (NULL);
+
 	for (l = 0; l < i; l++)
 		cat[l] = s1[l];
-	for (l = 0; l < j; j++)
+
+	for (l = 0; l < j; l++)
 		cat[l + i] = s2[l];
-	cat[i + j] = '\0';
+	s[i + j] = '\0';
 	return (cat);
 }
