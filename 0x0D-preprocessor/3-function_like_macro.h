@@ -1,6 +1,6 @@
 #ifndef 3_FUNCTION_LIKE_MACRO
 #define 3_FUNCTION_LIKE_MACRO
 
-#define ABS(x) ((num > 0) ? num : (num * -1))
+#define ABS(x) ((x > 0) ? x : (x * (-1)))
 
 #endif
