@@ -10,7 +10,6 @@
  * Description: this structure describes dogs
  */
 
-_putchar (char *c);
 struct dog
 {
 	char *name;
