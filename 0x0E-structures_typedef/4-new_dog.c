@@ -6,8 +6,6 @@
  * @age: age dogs
  * @owner: onwer
  *
- * Description: creating a new dog profile
- *
  * Return: dog
  */
 
