@@ -16,7 +16,6 @@ struct dog
 	char *owner;
 };
 
-int _putchar(char c);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *newdog(char *name, float age, char *owner);
