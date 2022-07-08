@@ -24,11 +24,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (str == NULL)
 			printf("(nil)");
-
-		if (i < (n - 1) && separator)
-			printf("%s", separator);
 		else
-			print("%s", str);
+		{
+
+			if (i < (n - 1) && separator != 0)
+				printf("%s%s", str, separator);
+			else
+				print("%s", str);
+		}
 	}
 	printf("\n");
 	va_end(argstr);
