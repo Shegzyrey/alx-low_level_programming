@@ -30,7 +30,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			if (i < (n - 1) && separator != 0)
 				printf("%s%s", str, separator);
 			else
-				print("%s", str);
+				printf("%s", str);
 		}
 	}
 	va_end(argstr);
