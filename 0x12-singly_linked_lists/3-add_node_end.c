@@ -15,7 +15,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (head == NULL)
 		return (NULL);
 	add = malloc(sizeof(list_t));
-	if (inc == NULL)
+	if (add == NULL)
 		return (NULL);
 	if (*head == NULL)
 		*head = add;
