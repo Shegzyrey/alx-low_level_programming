@@ -7,7 +7,7 @@
  * Return: 0 if success
  */
 
-ssize_t read_textfile(count char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t reader, output, fd;
 	char buff;
