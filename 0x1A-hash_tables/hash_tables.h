@@ -7,18 +7,18 @@
 
 
 /**
- * struct hash_node_value - node of a hash table
+ * struct hash_node_s - node of a hash table
  *
  * @key: the uniques key for the hash table
  * @value: corresponding key value
  * @next: pointer to the next node in the list
  */
 
-typedef struct hash_node_value
+typedef struct hash_node_s
 {
 	char *key;
 	char *value;
-	struct hash_node_value *next;
+	struct hash_node_s *next;
 } hash_node_t;
 
 
@@ -28,7 +28,7 @@ typedef struct hash_node_value
  * @array: array to be traversed
  */
 
-typedef struct hash_table_value
+typedef struct hash_table_s
 {
 	unsigned long int size;
 	hash_node_t **array;
