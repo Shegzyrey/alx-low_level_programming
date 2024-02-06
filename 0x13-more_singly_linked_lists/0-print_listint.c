@@ -17,7 +17,7 @@ size_t print_listint_t(const listint_t *h)
 	{
 		printtf("%d\n", h->n);
 		h = h->next;
-		count_n++
+		count_n++;
 	}
 
 	return (count_n);
