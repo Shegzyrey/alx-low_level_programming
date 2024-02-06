@@ -7,6 +7,7 @@
 #include <string.h>
 
 
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -17,11 +18,11 @@
  */
 
 
-typedef struct list_s
+typedef struct listint_s
 {
 	int n;
 	struct listint_s *next;
-} list_t;
+} listint_t;
 
 size_t print_listint_t(const listint_t *h)
 
